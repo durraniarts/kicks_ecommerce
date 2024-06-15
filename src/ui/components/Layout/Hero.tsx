@@ -6,14 +6,14 @@ import NewItemsDrop from '../modules/NewItemsDrop';
 
 const Hero = () => {
   return (
-    <header className=''>
+    <header className=' lg:pb-32 pb-6'>
       <section className=' flex flex-col gap-4 '>
         <div>
           <h1 className='text-[15vw] uppercase font-bold font-rubik'>
             Do it<span className='text-kick-blue'>{" "}right</span>
           </h1>
         </div>
-        <div className='flex flex-col md:gap-24 gap-6 '>
+        <div className='flex flex-col md:gap-24 gap-6 lg:gap-20 '>
 
           <div className='  flex justify-center items-end '>
             <div className='flex  absolute w-full sm:px-16 px-12 lg:px-28 lg:pb-12 sm:pb-12 pb-8 '>
