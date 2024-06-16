@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${rubik.variable} ${open_sans.variable} bg-kick-gray px-4 lg:px-14 w-full `}>
+      <body className={`${rubik.variable} ${open_sans.variable} bg-kick-gray  w-full `}>
         <Navbar />
         {children}
       </body>

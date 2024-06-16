@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEventHandler } from 'react';
 
 
 type Component = {
@@ -9,6 +9,7 @@ type Component = {
     strokeColor?: string;
     rotate?: number;
     className?: string;
+    onClick?: MouseEventHandler<HTMLDivElement> | undefined;
 };
 
 
@@ -97,3 +98,29 @@ export const Hamburger = ({ height, width, strokeColor, strokeWidth, fillColor, 
         </div>
     );
 };
+
+export const Next_previous = ({ height, width, strokeColor, strokeWidth, fillColor, className, rotate, onClick }: Component) => {
+    return (
+        <div className={className} onClick={onClick}>
+            <svg width={width} height={height} viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ rotate: `${rotate}deg` }}>
+                <path d="M1 1.5L5.5 6L1 10.5" stroke={strokeColor} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+
+        </div>
+    );
+};
+
+export const Link_action = ({ height, width, strokeColor, strokeWidth, fillColor, className, rotate }: Component) => {
+    return (
+        <div className={className}>
+
+            <svg width={width} height={height} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ rotate: `${rotate}deg` }}>
+                <path d="M2.16681 1.10565H14.8947V13.8336M14.0108 1.98954L1.10615 14.8942" stroke={strokeColor} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+
+        </div>
+    );
+};
+

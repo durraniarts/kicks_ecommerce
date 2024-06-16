@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Navbar = () => {
     return (
-        <nav className=' ' style={{ fontFamily: 'var(--font1)' }}>
+        <nav className='px-4 lg:px-14 ' style={{ fontFamily: 'var(--font1)' }}>
             <section className=' bg-kick-white w-full mt-8 rounded-xl lg:rounded-3xl'>
                 <div className='lg:px-16 px-4 lg:py-8 py-4  text-black text-base font-semibold flex  justify-between items-center'>
                     <ul className='hidden w-fit items-center gap-10 lg:flex '>

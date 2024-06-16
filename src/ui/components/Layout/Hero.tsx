@@ -6,7 +6,7 @@ import NewItemsDrop from '../modules/NewItemsDrop';
 
 const Hero = () => {
   return (
-    <header className=' lg:pb-32 pb-6'>
+    <header className=' lg:pb-32 pb-6 px-4 lg:px-14'>
       <section className=' flex flex-col gap-4 '>
         <div>
           <h1 className='text-[15vw] uppercase font-bold font-rubik'>

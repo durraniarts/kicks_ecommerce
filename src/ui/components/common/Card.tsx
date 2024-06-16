@@ -7,7 +7,8 @@ const Card = () => {
         <section className='flex basis-1/4 flex-col gap-4'>
 
             <div className='flex w-full sm:border-[10px] border-[6px] border-kick-white rounded-2xl sm:rounded-[28px]'>
-                <Image width={450} height={450} alt='' src={'/assets/shoes.png'} className='w-full h-auto' />
+                <Image width={450} height={450} alt='' src={'/assets/shoes1.png'} className='w-full h-auto' />
+                <div className='bg-kick-blue text-white font-medium absolute rounded-tl-xl sm:rounded-tl-[20px] rounded-br-xl sm:rounded-br-[24px] sm:px-3 px-2 sm:py-2 py-1 sm:text-base text-xs'>New</div>
             </div>
             <div className='flex flex-col sm:gap-4 gap-2'>
                 <h4 className='font-semibold text-kick-black text-lg sm:text-xl lg:text-2xl'>ADIDAS 4DFWD X PARLEY RUNNING SHOES</h4>
