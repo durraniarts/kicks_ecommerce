@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { Link_action } from '../icons/Icons';
+import Link from 'next/link';
 
 const Category_card = () => {
     return (
@@ -8,7 +9,9 @@ const Category_card = () => {
             <Image src={'/assets/category_img.png'} width={450} height={450} alt='' className='aspect-square object-cover' />
             <div className='flex w-full text-left justify-between'>
                 <h5 className='font-semibold text-4xl'>LIFESTYLE SHOES</h5>
-                <Link_action width={16} height={16} strokeWidth={2} className=' bg-kick-black w-10 h-10 flex justify-center items-center rounded-lg' strokeColor='#FAFAFA' />
+                <Link href={'/'}>
+                    <Link_action width={16} height={16} strokeWidth={2} className=' cursor-pointer bg-kick-black w-10 h-10 flex justify-center items-center rounded-lg' strokeColor='#FAFAFA' />
+                </Link>
             </div>
         </div>
     );

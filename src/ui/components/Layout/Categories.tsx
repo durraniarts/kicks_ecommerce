@@ -17,7 +17,7 @@ const Categories = () => {
         });
     };
 
-    const items: Array<any> = Array(6).fill(5);
+    const items: Array<any> = Array(4).fill(5);
 
     return (
         <section className=' bg-kick-black min-h-[100vh] flex w-full flex-col gap-16  '>
@@ -25,7 +25,7 @@ const Categories = () => {
                 <h5 className='lg:text-7xl sm:text-4xl text-2xl font-semibold w-fit h-fit text-kick-white'>
                     CATEGORIES
                 </h5>
-                <div className='flex h-fit gap-4 '>
+                <div aria-disabled='true' className='flex h-fit gap-4 '>
 
                     <Next_previous onClick={() => {
                         scrollToIndex(count - 4);
