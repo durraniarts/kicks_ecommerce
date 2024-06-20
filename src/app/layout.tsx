@@ -3,6 +3,7 @@ import "../ui/styles/globals.css";
 import Navbar from "@/ui/components/modules/Navbar";
 import { Inter, Rubik, Source_Sans_3 } from 'next/font/google';
 import { open_sans, rubik } from "@/ui/fonts/fonts";
+import Footer from "@/ui/components/Layout/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={`${rubik.variable} ${open_sans.variable} bg-kick-gray  w-full `}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
