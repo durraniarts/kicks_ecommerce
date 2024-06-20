@@ -27,7 +27,7 @@ const Categories = () => {
     return (
         <section className=' bg-kick-black  flex w-full flex-col md:gap-16 gap-10  '>
             <div className='mt-24 flex w-full justify-between h-fit items-baseline px-4 lg:px-14 '>
-                <h5 className='lg:text-7xl sm:text-4xl text-2xl font-semibold w-fit h-fit text-kick-white'>
+                <h5 className='font-semibold lg:text-7xl xs:text-3xl sm:text-5xl text-2xl uppercase text-kick-white'>
                     CATEGORIES
                 </h5>
                 <div className='flex h-fit gap-4 '>
@@ -46,7 +46,7 @@ const Categories = () => {
             </div>
 
             {isAbove && (
-                <div ref={carouselRef} className='mx-4  lg:ml-14 overflow-x-scroll scroll-smooth    flex  rounded-tl-[64px] no-scrollbar snap-x snap-mandatory  '>
+                <div ref={carouselRef} className='mx-4 lg:mx-0  lg:ml-14 overflow-x-scroll scroll-smooth    flex  rounded-tl-[64px] no-scrollbar snap-x snap-mandatory  '>
                     {items.map((item, index) => (
 
                         <Category_card key={index} />

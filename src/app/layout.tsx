@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "../ui/styles/globals.css";
-import Navbar from "@/ui/components/modules/Navbar";
+import Navbar from "@/ui/components/Layout/Navbar";
 import { Inter, Rubik, Source_Sans_3 } from 'next/font/google';
 import { open_sans, rubik } from "@/ui/fonts/fonts";
 import Footer from "@/ui/components/Layout/Footer";

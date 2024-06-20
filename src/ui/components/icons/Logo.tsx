@@ -2,7 +2,7 @@ import React from "react";
 
 type Component = {
   height: number;
-  width: number;
+  width: number | string;
   strokeWidth?: number;
   fillColor?: string;
   strokeColor?: string;

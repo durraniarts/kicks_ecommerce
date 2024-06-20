@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../modules/Navbar';
+import Navbar from './Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
 import NewItemsDrop from '../modules/NewItemsDrop';
